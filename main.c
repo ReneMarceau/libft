@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:17:00 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/10/22 13:34:40 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/10/26 12:19:32 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,41 +102,41 @@
 
 // int	main(void)
 // {
-// 	// char dst1[100] = "bite";
-// 	// char src1[] = "Wesh la zone!";
-// 	// char dst2[100] = "bite";
-// 	// char src2[] = "Wesh la zone!";
+// 	char str1[100] = "bite";
+// 	char str2[] = "Wesh la zone!";
 // 	size_t len = 7;
 
-// 	printf("%s\n", ft_memcpy(((void *)0), ((void *)0), len));
-// 	printf("%s\n", memcpy(((void *)0), ((void *)0), len));
+// 	printf("%d\n", ft_memcpy(((void *)0), ((void *)0), len));
+// 	printf("%d\n", memcpy(((void *)0), ((void *)0), len));
 // 	return (0);
 // }
 
 // int	main(void)
 // {
-// 	char str[100] = "Learningisfun";
+// 	char str1[100] = "Learningisfun";
+// 	char str2[100] = "Learningisfun";
 // 	char *first;
 // 	char *second;
 
-// 	first = str;
-// 	second = str;
-// 	printf("Original string : %s\n ",str);
+// 	first = str1;
+// 	second = str2;
+// 	printf("Original string : %s\n ",str1);
 // 	ft_memmove(first + 8, first, 10);
-// 	printf("my memmove overlap : %s\n ", str);
+// 	printf("my memmove overlap : %s\n ", str1);
 // 	memmove(second + 8, second, 10);
-// 	printf("real memmove overlap : %s\n ", str);
+// 	printf("real memmove overlap : %s\n ", str2);
 // }
 
 // int	main(void)
 // {
-// 	char dst1[100] = "bite";
+// 	char dst1[100] = "bit";
 // 	char src1[] = "Wesh la zone!";
-// 	char dst2[100] = "bite";
+// 	char dst2[100] = "bit";
 // 	char src2[] = "Wesh la zone!";
 // 	size_t len = 7;
 
 // 	printf("%zu\n", ft_strlcpy(dst1, src1, len));
+// 	printf("%s\n", dst1);
 // 	printf("%lu\n", strlcpy(dst2, src2, len));
 // 	return (0);
 // }
@@ -174,4 +174,57 @@
 // 		printf("%c\n", tolower(argv[1][0]));
 // 	}
 // 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	char str[] = "Wesh la zone!";
+
+// 	printf("The real function : %s\n", strchr(str, 'e'));
+// 	printf("My function : %s\n", ft_strchr(str, 'e'));
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	char str[] = "\0";
+
+// 	printf("The real function : %s\n", strrchr(str, 'a'));
+// 	printf("My function : %s\n", ft_strrchr(str, 'a'));
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	char str1[100] = "bite";
+// 	char str2[] = "Wesh la zone!";
+// 	char str3[100] = "bite";
+// 	char str4[] = "Wesh la zone!";
+// 	size_t len = 7;
+
+// 	printf("%d\n", ft_strncmp(str1, str2, len));
+// 	printf("%d\n", strncmp(str3, str4, len));
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	char str[] = "bonjourno";
+// 	int	c = 0;
+// 	size_t len = 0;
+
+// 	printf("The real function : %s\n", memchr(str, c, len));
+// 	printf("My function : %s\n", ft_memchr(str, c, len));
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	char haystack[50] = "aaabcabcd";
+// 	char needle[10] = "abcd";
+// 	size_t max = ft_strlen(haystack);
+// 	char *i1 = strnstr(haystack, needle, max);
+// 	char *i2 = ft_strnstr(haystack, needle, max);
+// 	printf("vrai fonction: %s\n", i1);
+// 	printf("ma fonction: %s\n", i2);
 // }
