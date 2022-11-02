@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 11:36:38 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/10/31 11:42:54 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/01 17:50:31 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_putendl_fd(char *s, int fd)
 	if (s)
 	{
 		ft_putstr_fd(s, fd);
-		ft_putstr_fd("\n", fd);
+		ft_putchar_fd('\n', fd);
 	}
 }

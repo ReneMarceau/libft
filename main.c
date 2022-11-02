@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:17:00 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/10/26 12:19:32 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/01 17:49:45 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -227,4 +227,88 @@
 // 	char *i2 = ft_strnstr(haystack, needle, max);
 // 	printf("vrai fonction: %s\n", i1);
 // 	printf("ma fonction: %s\n", i2);
+// }
+
+// int	main(void)
+// {
+// 	char n[40] = "99999999999999999999999999";
+// 	int i1 = atoi(n);
+// 	int i2 = ft_atoi(n);
+
+// 	printf("real function: %d\n", i1);
+// 	printf("my function: %d\n", i2);
+// }
+
+// int	main(void)
+// {
+// 	char	str[] = "vache qui rit";
+
+// 	printf("%s\n", ft_strdup(str));
+// }
+
+// int	main(void)
+// {
+// 	int	size = 8593;
+
+// 	void * d1 = ft_calloc(size, sizeof(int));
+// 	void * d2 = calloc(size, sizeof(int));
+// 	char *s1 = d1;
+// 	char *s2 = d2;
+
+// 	printf("%s\n", s1);
+// 	printf("%s\n", s2);
+// }
+
+// int	main(void)
+// {
+// 	char	str[] = "j'aime le caca";
+// 	int 	start = 2;
+// 	int		len = 4;
+
+// 	printf("%s\n", ft_substr(str, start, len));
+// }
+
+// int	main(int argc, char **argv)
+// {
+// 	if (argc == 2)
+// 		ft_putchar_fd(argv[1][0], 1);
+// 	return (0);
+// }
+
+// int	main(int argc, char **argv)
+// {
+// 	if (argc == 2)
+// 		ft_putstr_fd(argv[1], 1);
+// 	return (0);
+// }
+
+// int	main(int argc, char **argv)
+// {
+// 	if (argc == 2)
+// 		ft_putendl_fd(argv[1], 1);
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	int	num = 1234;
+// 	ft_putnbr_fd(num, 1);
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	char	str1[] = "wesh";
+// 	char	str2[] = " la zone";
+// 	printf("%s\n", ft_strjoin(str1, str2));
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	char	s1[] = "caca... c'est bon le caca";
+// 	char	set[] = "caca";
+
+// 	printf("%s\n", ft_strtrim(s1, set));
+// 	return (0);
 // }
