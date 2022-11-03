@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 11:08:38 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/03 10:56:04 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/03 11:16:39 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	**ft_split(char const *s, char c)
 	size_t	j;
 	int		index;
 
-	split = (char **)malloc((count_words(s, c) + 1) * sizeof(char *));
+	split = (char **)ft_calloc((count_words(s, c) + 1), sizeof(char *));
 	if (!split)
 		return (NULL);
 	i = 0;

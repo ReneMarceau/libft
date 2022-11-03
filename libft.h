@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:14:13 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/01 20:09:11 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/02 19:01:02 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,13 +51,13 @@ char	*ft_strdup(const char *s1);
 
 // ------------------------------ Ft_*to* -----------------------------------
 int		ft_atoi(const char *str);
-//char	*ft_itoa(int n);
+char	*ft_itoa(int n);
 
 // ---------------------------- String manip ---------------------------------
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-//char	**ft_split(char const *s, char c);
+char	**ft_split(char const *s, char c);
 
 // -------------------------- Func for each * --------------------------------
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));

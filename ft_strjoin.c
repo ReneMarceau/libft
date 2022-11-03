@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 16:37:56 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/01 18:55:00 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/03 11:18:54 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	str = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	str = (char *)ft_calloc((ft_strlen(s1) + ft_strlen(s2) + 1), sizeof(char));
 	if (!str)
 		return (NULL);
 	ft_strlcpy(str, s1, ft_strlen(s1) + 1);

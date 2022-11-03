@@ -6,13 +6,13 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 11:41:16 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/01 17:36:28 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/03 11:19:21 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_check_char(char c, char const *set)
+static int	ft_check_char(char c, char const *set)
 {
 	size_t	i;
 
@@ -42,7 +42,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end > start && ft_check_char(s1[end - 1], set))
 		end--;
 	str_len = (end - start) + 1;
-	str = (char *)malloc(sizeof(char) * str_len);
+	str = (char *)ft_calloc(sizeof(char), str_len);
 	if (!str)
 		return (NULL);
 	ft_strlcpy(str, s1 + start, str_len);

@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 15:51:44 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/10/28 22:22:35 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/03 11:20:08 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size = ft_strlen(s + start);
 	if (size < len)
 		len = size;
-	tab = (char *)malloc((len + 1) * sizeof(char));
+	tab = (char *)ft_calloc(len + 1, sizeof(char));
 	if (!tab)
 		return (NULL);
 	count = 0;

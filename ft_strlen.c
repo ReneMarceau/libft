@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:14:08 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/10/18 16:42:45 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/03 13:45:46 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i])
 		i++;
 	return (i);
 }

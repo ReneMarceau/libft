@@ -6,7 +6,7 @@
 #    By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 11:15:42 by rmarceau          #+#    #+#              #
-#    Updated: 2022/11/01 20:10:19 by rmarceau         ###   ########.fr        #
+#    Updated: 2022/11/02 20:00:41 by rmarceau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,15 +43,14 @@ SRCS = ft_isalpha.c \
 	ft_substr.c     \
 	ft_strjoin.c    \
 	ft_strtrim.c    \
+	ft_split.c      \
+	ft_itoa.c       \
 	ft_strmapi.c    \
 	ft_striteri.c   \
 	ft_putchar_fd.c \
 	ft_putstr_fd.c  \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c  \
-
-
-
 
 all: $(NAME)
 

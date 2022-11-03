@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:17:00 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/01 17:49:45 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/03 14:19:39 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -312,3 +312,24 @@
 // 	printf("%s\n", ft_strtrim(s1, set));
 // 	return (0);
 // }
+
+// int	main(void)
+// {
+// 	char	s[] = "hello!";
+// 	char	c = ' ';
+// 	char	**str = ft_split(s, c);
+// 	while (*str)
+// 	{
+// 		printf("%s\n", *str);
+// 		str++;
+// 	}
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	int	num = 123;
+// 	printf("%s\n", ft_itoa(num));
+// 	return (0);
+// }
+fr
