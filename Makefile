@@ -6,7 +6,7 @@
 #    By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 11:15:42 by rmarceau          #+#    #+#              #
-#    Updated: 2022/11/02 20:00:41 by rmarceau         ###   ########.fr        #
+#    Updated: 2022/11/04 06:27:21 by rmarceau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 OBJS = $(SRCS:.c=.o)
+BOBJS = $(BSRCS:.c=.o)
 RM = /bin/rm -f
 AR = ar crs
 
@@ -52,13 +53,26 @@ SRCS = ft_isalpha.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c  \
 
+BSRCS = ft_lstnew.c       \
+		ft_lstadd_front.c \
+		ft_lstsize.c      \
+		ft_lstlast.c      \
+		ft_lstadd_back.c  \
+		ft_lstdelone.c    \
+		ft_lstclear.c     \
+		ft_lstiter.c      \
+		ft_lstmap.c       \
+
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar crs $(NAME) $(OBJS)
 
+bonus: $(BOBJS)
+	ar crs $(NAME) $(BOBJS)
+
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BOBJS)
 
 fclean: clean
 	$(RM) $(NAME)

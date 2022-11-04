@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:17:00 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/03 14:23:47 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/04 07:49:33 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -331,4 +331,113 @@
 // 	int	num = 123;
 // 	printf("%s\n", ft_itoa(num));
 // 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	t_list	*item = ft_lstnew((void *)4);
+// 	printf("%d\n", (int)item->content);
+// }
+
+// int	main(void)
+// {
+// 	t_list	*head;
+// 	t_list	*new = ft_lstnew((void *)10);
+// 	t_list	*item1 = ft_lstnew((void *)20);
+// 	t_list	*item2 = ft_lstnew((void *)30);
+// 	t_list	*item3 = ft_lstnew((void *)40);
+// 	t_list	*item4 = ft_lstnew((void *)50);
+
+// 	head = item4;
+// 	item4->next = NULL;
+// 	ft_lstadd_front(&head, item3);
+// 	ft_lstadd_front(&head, item2);
+// 	ft_lstadd_front(&head, item1);
+// 	ft_lstadd_front(&head, new);
+// 	while (head)
+// 	{
+// 		printf("%d\n", (int)head->content);
+// 		head = head->next;
+// 	}
+// }
+
+// int	main(void)
+// {
+// 	t_list	*head;
+// 	t_list	*new = ft_lstnew((void *)10);
+// 	t_list	*item1 = ft_lstnew((void *)20);
+// 	t_list	*item2 = ft_lstnew((void *)30);
+// 	t_list	*item3 = ft_lstnew((void *)40);
+// 	t_list	*item4 = ft_lstnew((void *)50);
+
+// 	head = item4;
+// 	item4->next = NULL;
+// 	ft_lstadd_front(&head, item3);
+// 	ft_lstadd_front(&head, item2);
+// 	ft_lstadd_front(&head, item1);
+// 	ft_lstadd_front(&head, new);
+// 	printf("%d\n", ft_lstsize(head));
+// }
+
+// int	main(void)
+// {
+// 	t_list	*head;
+// 	t_list	*new = ft_lstnew((void *)10);
+// 	t_list	*item1 = ft_lstnew((void *)20);
+// 	t_list	*item2 = ft_lstnew((void *)30);
+// 	t_list	*item3 = ft_lstnew((void *)40);
+// 	t_list	*item4 = ft_lstnew((void *)50);
+
+// 	head = item4;
+// 	item4->next = NULL;
+// 	ft_lstadd_front(&head, item3);
+// 	ft_lstadd_front(&head, item2);
+// 	ft_lstadd_front(&head, item1);
+// 	ft_lstadd_front(&head, new);
+// 	printf("%d\n", (int)ft_lstlast(head)->content);
+// }
+
+// int	main(void)
+// {
+// 	t_list	*head1;
+// 	t_list	*head2;
+// 	t_list	*new = ft_lstnew((void *)10);
+// 	t_list	*item1 = ft_lstnew((void *)20);
+// 	t_list	*item2 = ft_lstnew((void *)30);
+// 	t_list	*item3 = ft_lstnew((void *)40);
+// 	t_list	*item4 = ft_lstnew((void *)50);
+
+// 	head1 = NULL;
+// 	head2 = NULL;
+// 	ft_lstadd_back(&head1, item1);
+// 	ft_lstadd_back(&head1, item2);
+// 	ft_lstadd_back(&head1, item3);
+// 	ft_lstadd_back(&head2, item4);
+// 	ft_lstadd_back(&head2, new);
+// 	ft_lstadd_back(&head1, head2);
+// 	while (head1)
+// 	{
+// 		printf("%d\n", (int)head1->content);
+// 		head1 = head1->next;
+// 	}
+// }
+
+// void    ft_del(void *content)
+// {
+//     free(content);
+// }
+
+// void    *ft_map(void *ct)
+// {
+//     int i;
+//     void    *c;
+//     char    *pouet;
+
+//     c = ct;
+//     i = -1;
+//     pouet = (char *)c;
+//     while (pouet[++i])
+//         if (pouet[i] == 'o')
+//             pouet[i] = 'a';
+//     return (c);
 // }
