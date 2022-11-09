@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 17:44:46 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/03 11:17:03 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/08 16:14:45 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,12 @@
 char	*ft_strdup(const char *s1)
 {
 	char	*s2;
+	size_t	str_len;
 
-	s2 = (char *)ft_calloc(ft_strlen(s1) + 1, sizeof(char));
+	str_len = ft_strlen(s1) + 1;
+	s2 = (char *)ft_calloc(str_len, sizeof(char));
 	if (!s2)
 		return (NULL);
-	ft_strlcpy(s2, s1, ft_strlen(s1) + 1);
+	ft_strlcpy(s2, s1, str_len);
 	return (s2);
 }

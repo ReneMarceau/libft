@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 17:55:24 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/03 13:47:29 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/08 16:21:26 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	if (dstsize == 0 || dstsize <= dlen)
 		return (slen + dstsize);
 	while (src[i] && j < dstsize - 1)
-	{
-		dst[j] = src[i];
-		i++;
-		j++;
-	}
+		dst[j++] = src[i++];
 	dst[j] = '\0';
 	return (dlen + slen);
 }

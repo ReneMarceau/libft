@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 04:26:23 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/04 07:42:21 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/07 14:55:18 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	{
 		while (*lst)
 		{
-			temp = *lst;
-			*lst = temp->next;
-			ft_lstdelone(temp, del);
+			temp = (*lst)->next;
+			ft_lstdelone(*lst, del);
+			*lst = temp;
 		}
 	}
 }

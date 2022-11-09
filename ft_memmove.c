@@ -6,46 +6,35 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:57:07 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/02 15:51:03 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/08 17:26:12 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_fuckit(void *dst, const void *src, size_t i, size_t len)
-{
-	unsigned char	*cdst;
-	unsigned char	*csrc;
-
-	cdst = (unsigned char *)dst;
-	csrc = (unsigned char *)src;
-	while (i < len)
-	{
-		cdst[i] = csrc[i];
-		i++;
-	}
-}
-
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t			i;
 	unsigned char	*cdst;
 	unsigned char	*csrc;
+	int				i;
 
-	i = 0;
 	cdst = (unsigned char *)dst;
 	csrc = (unsigned char *)src;
+	i = -1;
 	if (!(dst || src))
 		return (NULL);
 	if (cdst > csrc)
 	{
-		while (i < len)
+		while (len > 0)
 		{
 			cdst[len - 1] = csrc[len - 1];
 			len--;
 		}
 	}
 	else
-		ft_fuckit(cdst, csrc, i, len);
+	{
+		while ((size_t)++i < len)
+			cdst[i] = csrc[i];
+	}
 	return (dst);
 }

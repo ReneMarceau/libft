@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 15:56:02 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/02 20:03:57 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/08 17:14:01 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,8 @@ int	ft_atoi(const char *str)
 		str++;
 	if (*str == '-' || *str == '+')
 	{
-		if (*str == '-')
+		if (*str++ == '-')
 			sign *= -1;
-		str++;
 	}
 	while (ft_isdigit(*str))
 	{

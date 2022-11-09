@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 11:41:16 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/03 11:19:21 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/08 16:49:04 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,8 @@ static int	ft_check_char(char c, char const *set)
 	i = 0;
 	while (set[i])
 	{
-		if (set[i] == c)
+		if (set[i++] == c)
 			return (1);
-		i++;
 	}
 	return (0);
 }

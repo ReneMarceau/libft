@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:14:13 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/04 06:27:35 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/08 17:02:15 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <unistd.h>
 
 // ------------------------------ Struct ------------------------------------
-
 typedef struct s_list
 {
 	void			*content;
@@ -31,6 +30,7 @@ int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 
+// ------------------------------ Length ------------------------------------
 size_t	ft_strlen(const char *s);
 
 // ------------------------------ Memory ------------------------------------
@@ -46,7 +46,7 @@ void	*ft_calloc(size_t count, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 
-// ------------------------------ Ft_to -----------------------------------
+// ------------------------------ Ft_to* ----------------------------------
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 

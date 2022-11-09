@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 05:52:25 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/04 07:49:06 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/07 17:06:54 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_list;
 	t_list	*new_element;
 
-	if (lst == NULL)
+	if (!lst)
 		return (NULL);
 	new_list = NULL;
 	while (lst)

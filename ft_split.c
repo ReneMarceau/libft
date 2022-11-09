@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 11:08:38 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/07 11:51:22 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/08 16:10:36 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,16 +49,18 @@ static char	**ft_fill_substr(char const *s, char c, char **split)
 {
 	size_t	i;
 	size_t	j;
+	size_t	str_len;
 	int		index;
 
 	i = 0;
 	j = 0;
+	str_len = ft_strlen(s);
 	index = -1;
-	while (i <= ft_strlen(s))
+	while (i <= str_len)
 	{
 		if (s[i] != c && index < 0)
 			index = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
+		else if ((s[i] == c || i == str_len) && index >= 0)
 		{
 			split[j] = ft_substr(s, index, i - index);
 			if (!split[j++])

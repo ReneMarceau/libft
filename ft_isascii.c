@@ -6,13 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 17:36:19 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/10/20 12:25:33 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/08 15:49:46 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	return (c >= 0 && c <= 127);
 }

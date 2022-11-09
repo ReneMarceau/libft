@@ -6,13 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 17:56:54 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/10/28 20:13:32 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/08 15:51:07 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= '~')
-		return (1);
-	return (0);
+	return (c >= 32 && c <= '~');
 }
