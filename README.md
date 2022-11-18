@@ -71,3 +71,12 @@ Bonus functions to implement
 | ``ft_lstclear`` | Deletes a given element and every element after that |
 | ``ft_lstiter`` | Applies a function to the content of every node of the linked list |
 | ``ft_lstmap`` | Applies function to a copy of the list, freeing when necessary |
+
+
+## Ft_printf
+This project is pretty straight forward. You will recode printf. You will mainly learn how to use variadic arguments.
+
+| Bonus Function | Description |
+| :------------: | :---------: |
+| ``ft_printf`` | Reproduce the behavior of the real ``printf`` function |
+
