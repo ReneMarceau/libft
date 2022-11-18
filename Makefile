@@ -6,7 +6,7 @@
 #    By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 11:15:42 by rmarceau          #+#    #+#              #
-#    Updated: 2022/11/08 17:40:27 by rmarceau         ###   ########.fr        #
+#    Updated: 2022/11/18 12:50:06 by rmarceau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,71 +15,44 @@ NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-RM = /bin/rm -f
+RM = rm -f
 AR = ar crs
 
-SRCS = ft_isalpha.c \
- 	ft_isdigit.c    \
-	ft_isalnum.c    \
-	ft_isascii.c    \
-	ft_isprint.c    \
-	ft_strlen.c     \
-	ft_memset.c     \
-	ft_bzero.c      \
-	ft_memcpy.c     \
-	ft_memmove.c    \
-	ft_strlcpy.c    \
-	ft_strlcat.c    \
-	ft_toupper.c    \
-	ft_tolower.c    \
-	ft_strchr.c     \
-	ft_strrchr.c    \
-	ft_strncmp.c    \
-	ft_memchr.c     \
-	ft_memcmp.c     \
-	ft_strnstr.c    \
-	ft_atoi.c       \
-	ft_calloc.c     \
-	ft_strdup.c     \
-	ft_substr.c     \
-	ft_strjoin.c    \
-	ft_strtrim.c    \
-	ft_split.c      \
-	ft_itoa.c       \
-	ft_strmapi.c    \
-	ft_striteri.c   \
-	ft_putchar_fd.c \
-	ft_putstr_fd.c  \
-	ft_putendl_fd.c \
-	ft_putnbr_fd.c  \
+SRCS_PATH = src/
+
+FTIS =  alpha digit alnum ascii print
+FTMEM = bzero memset memcpy memmove memchr memcmp calloc
+FTSTR = len lcpy lcat chr rchr ncmp nstr dup join trim mapi iteri
+FTTO = ft_toupper ft_tolower ft_atoi ft_itoa
+FTSUB = substr split
+FTPUT = char_fd str_fd endl_fd nbr_fd nbr_base_fd
+FTLST = new add_front size last add_back delone clear iter map
+
+SRCS = $(addsuffix .c, $(addprefix $(SRCS_PATH)ft_is/ft_is, $(FTIS))) \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_mem/ft_, $(FTMEM)))    \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_str/ft_str, $(FTSTR))) \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_to/, $(FTTO)))         \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_sub/ft_, $(FTSUB)))    \
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_put/ft_put, $(FTPUT))) \
 
 OBJS = $(SRCS:.c=.o)
 
-BSRCS = ft_lstnew.c   \
-	ft_lstadd_front.c \
-	ft_lstsize.c      \
-	ft_lstlast.c      \
-	ft_lstadd_back.c  \
-	ft_lstdelone.c    \
-	ft_lstclear.c     \
-	ft_lstiter.c      \
-	ft_lstmap.c       \
+BONUS_SRCS = $(addsuffix .c, $(addprefix $(SRCS_PATH)ft_lst/ft_lst, $(FTLST)))
+BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
-BOBJS = $(BSRCS:.c=.o)
+$(NAME): $(OBJS)
+	-@$(AR) $(NAME) $(OBJS)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	$(AR) $(NAME) $(OBJS)
-
-bonus: $(BOBJS)
-	$(AR) $(NAME) $(BOBJS)
+bonus: $(OBJS) $(BONUS_OBJS)
+	-@$(AR) $(NAME) $(OBJS) $(BONUS_OBJS)
 
 clean:
-	$(RM) $(OBJS) $(BOBJS)
+	-@$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
-	$(RM) $(NAME)
+	-@$(RM) $(NAME)
 
 re: fclean all
 

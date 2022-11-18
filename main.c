@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:17:00 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/08 16:11:37 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 13:30:22 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -403,6 +403,12 @@ void	*ft_lst_minus_5(void *content)
 
 // int	main(void)
 // {
+// 	ft_putnbr_base_fd(200, "0123456789abcdef", 1);
+// 	return (0);
+// }
+
+// int	main(void)
+// {
 // 	t_list	*item = ft_lstnew((void *)4);
 // 	printf("%d\n", (int)item->content);
 // 	return (0);
@@ -566,27 +572,27 @@ void	*ft_lst_minus_5(void *content)
 // 	return (0);
 // }
 
-// int	main(void)
-// {
-// 	t_list	*head;
-// 	t_list	*new = ft_lstnew((void *)10);
-// 	t_list	*item1 = ft_lstnew((void *)20);
-// 	t_list	*item2 = ft_lstnew((void *)30);
-// 	t_list	*item3 = ft_lstnew((void *)40);
-// 	t_list	*item4 = ft_lstnew((void *)50);
-// 	t_list	*map;
+int	main(void)
+{
+	t_list	*head;
+	t_list	*new = ft_lstnew((void *)10);
+	t_list	*item1 = ft_lstnew((void *)20);
+	t_list	*item2 = ft_lstnew((void *)30);
+	t_list	*item3 = ft_lstnew((void *)40);
+	t_list	*item4 = ft_lstnew((void *)50);
+	t_list	*map;
 
-// 	head = item4;
-// 	item4->next = NULL;
-// 	ft_lstadd_front(&head, item3);
-// 	ft_lstadd_front(&head, item2);
-// 	ft_lstadd_front(&head, item1);
-// 	ft_lstadd_front(&head, new);
-// 	map = ft_lstmap(head, ft_lst_minus_5, ft_del);
-// 	while (map)
-// 	{
-// 		printf("%d\n", (int)map->content);
-// 		map = map->next;
-// 	}
-// 	return (0);
-// }
+	head = item4;
+	item4->next = NULL;
+	ft_lstadd_front(&head, item3);
+	ft_lstadd_front(&head, item2);
+	ft_lstadd_front(&head, item1);
+	ft_lstadd_front(&head, new);
+	map = ft_lstmap(head, ft_lst_minus_5, ft_del);
+	while (map)
+	{
+		printf("%d\n", (int)map->content);
+		map = map->next;
+	}
+	return (0);
+}
