@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:17:00 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:30:22 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 13:33:45 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -572,27 +572,27 @@ void	*ft_lst_minus_5(void *content)
 // 	return (0);
 // }
 
-int	main(void)
-{
-	t_list	*head;
-	t_list	*new = ft_lstnew((void *)10);
-	t_list	*item1 = ft_lstnew((void *)20);
-	t_list	*item2 = ft_lstnew((void *)30);
-	t_list	*item3 = ft_lstnew((void *)40);
-	t_list	*item4 = ft_lstnew((void *)50);
-	t_list	*map;
+// int	main(void)
+// {
+// 	t_list	*head;
+// 	t_list	*new = ft_lstnew((void *)10);
+// 	t_list	*item1 = ft_lstnew((void *)20);
+// 	t_list	*item2 = ft_lstnew((void *)30);
+// 	t_list	*item3 = ft_lstnew((void *)40);
+// 	t_list	*item4 = ft_lstnew((void *)50);
+// 	t_list	*map;
 
-	head = item4;
-	item4->next = NULL;
-	ft_lstadd_front(&head, item3);
-	ft_lstadd_front(&head, item2);
-	ft_lstadd_front(&head, item1);
-	ft_lstadd_front(&head, new);
-	map = ft_lstmap(head, ft_lst_minus_5, ft_del);
-	while (map)
-	{
-		printf("%d\n", (int)map->content);
-		map = map->next;
-	}
-	return (0);
-}
+// 	head = item4;
+// 	item4->next = NULL;
+// 	ft_lstadd_front(&head, item3);
+// 	ft_lstadd_front(&head, item2);
+// 	ft_lstadd_front(&head, item1);
+// 	ft_lstadd_front(&head, new);
+// 	map = ft_lstmap(head, ft_lst_minus_5, ft_del);
+// 	while (map)
+// 	{
+// 		printf("%d\n", (int)map->content);
+// 		map = map->next;
+// 	}
+// 	return (0);
+// }
