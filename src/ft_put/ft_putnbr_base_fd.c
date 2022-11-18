@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 13:03:38 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:16:22 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:41:34 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 void	ft_putnbr_base_fd(int nb, char *base, int fd)
 {

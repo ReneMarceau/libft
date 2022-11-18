@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 17:44:46 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:16:37 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:41:44 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 char	*ft_strdup(const char *s1)
 {

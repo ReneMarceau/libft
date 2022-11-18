@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:14:13 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:24:54 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:37:12 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 // ------------------------------ Struct ------------------------------------
 typedef struct s_list
@@ -78,7 +79,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putnbr_base_fd(int nb, char *base, int fd);
 
-// -------------------------------- Bonus ------------------------------------
+// ----------------------------- Linked list ----------------------------------
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
@@ -88,5 +89,12 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+// ----------------------------- Ft_printf ----------------------------------
+int		ft_printf(const char *format, ...);
+int		ft_formats(va_list arg, const char format);
+int		ft_print_char(int c);
+int		ft_print_str(char *str);
+void	ft_printnbr_base(long nb, char *base, int *length);
 
 #endif

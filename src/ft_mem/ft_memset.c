@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 18:26:47 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:16:10 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:41:18 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

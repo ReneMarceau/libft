@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 19:01:09 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:17:31 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:42:16 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 static size_t	ft_count_num(int n)
 {

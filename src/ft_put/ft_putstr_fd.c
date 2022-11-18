@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 10:31:48 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:16:28 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:41:38 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

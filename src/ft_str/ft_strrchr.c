@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 13:27:41 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:17:07 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:42:04 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

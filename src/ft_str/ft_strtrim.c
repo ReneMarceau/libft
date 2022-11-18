@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 11:41:16 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:17:10 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:42:06 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 static int	ft_check_char(char c, char const *set)
 {

@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 16:37:56 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:16:43 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:41:48 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

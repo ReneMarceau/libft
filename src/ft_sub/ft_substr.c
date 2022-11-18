@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 15:51:44 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:17:23 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:42:11 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

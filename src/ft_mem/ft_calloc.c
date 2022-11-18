@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 18:51:14 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:15:56 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:39:49 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {

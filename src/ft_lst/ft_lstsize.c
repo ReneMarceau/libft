@@ -6,11 +6,11 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 21:30:20 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 13:15:17 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:39:44 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 int	ft_lstsize(t_list *lst)
 {
