@@ -81,3 +81,4 @@ This project is pretty straight forward. You will recode printf. You will mainly
 | :------------: | :---------: |
 | ``ft_printf`` | Reproduce the behavior of the real ``printf`` function |
 
+**Author:** *[René Marceau](https://github.com/ReneMarceau)*
