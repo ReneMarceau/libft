@@ -6,15 +6,21 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:14:13 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 17:37:12 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:06:14 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 69
+# endif
+
 # include <stdlib.h>
 # include <unistd.h>
+# include <sys/types.h>
+# include <sys/uio.h>
 # include <stdarg.h>
 
 // ------------------------------ Struct ------------------------------------
@@ -96,5 +102,11 @@ int		ft_formats(va_list arg, const char format);
 int		ft_print_char(int c);
 int		ft_print_str(char *str);
 void	ft_printnbr_base(long nb, char *base, int *length);
+
+// --------------------------- get_next_line --------------------------------
+char	*get_next_line(int fd);
+char	*ft_get_line(char *stash);
+char	*ft_clean_stash(char *stash);
+char	*ft_get_strjoin(char *stash, char *buff);
 
 #endif

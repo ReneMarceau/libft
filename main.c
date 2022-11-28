@@ -6,7 +6,7 @@
 /*   By: rmarceau <rmarceau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:17:00 by rmarceau          #+#    #+#             */
-/*   Updated: 2022/11/18 18:30:04 by rmarceau         ###   ########.fr       */
+/*   Updated: 2022/11/28 13:35:55 by rmarceau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <fcntl.h>
 
 char	ft_upper(unsigned int i, char c)
 {
@@ -219,10 +220,10 @@ void	*ft_lst_minus_5(void *content)
 
 // int	main(void)
 // {
-// 	char str[] = "\0";
+// 	char str[] = "Avada kedavra\nWesh la zone\ncoller la petite";
 
-// 	printf("The real function : %s\n", strrchr(str, 'a'));
-// 	printf("My function : %s\n", ft_strrchr(str, 'a'));
+// 	printf("The real function : %s\n", strrchr(str, '\n'));
+// 	printf("My function : %s\n", ft_strrchr(str, '\n'));
 // 	return (0);
 // }
 
@@ -597,57 +598,70 @@ void	*ft_lst_minus_5(void *content)
 // 	return (0);
 // }
 
-int	main(void)
-{
-	char		character 				= 'c';
-	char		*string 				= "Bien ou bien la famille ?";
-	char		*ptr_character 			= &character;
-	int			decimal 				= 1234;
-	int			integer 				= 2000;
-	unsigned int unsigned_decimal 		= 4589;
-	unsigned int hexadecimal 			= 3000;
-	unsigned int hexadecimal_forte 		= 3000;
+// int	main(void)
+// {
+// 	char		character 				= 'c';
+// 	char		*string 				= "Bien ou bien la famille ?";
+// 	char		*ptr_character 			= &character;
+// 	int			decimal 				= 1234;
+// 	int			integer 				= 2000;
+// 	unsigned int unsigned_decimal 		= 4589;
+// 	unsigned int hexadecimal 			= 3000;
+// 	unsigned int hexadecimal_forte 		= 3000;
 
-	ft_printf("\
-	------------------------------------------------------------------------------------\n\
-	My printf:\n\n\
-	character: %c\n\
-	string: %s\n\
-	ptr_character : %p\n\
-	decimal: %d\n\
-	integer : %i\n\
-	unsigned_decimal: %u\n\
-	hexadecimal: %x\n\
-	hexadecimal_forte : %X\n\
-	percentage: %%\n\n",\
-	 character,\
-	 string,\
-	 ptr_character,\
-	 decimal,\
-	 integer,\
-	 unsigned_decimal,\
-	 hexadecimal,\
-	 hexadecimal_forte\
-	);
+// 	ft_printf("\
+// 	---------------------------------------------------------\n\
+// 	My printf:\n\n\
+// 	character: %c\n\
+// 	string: %s\n\
+// 	ptr_character : %p\n\
+// 	decimal: %d\n\
+// 	integer : %i\n\
+// 	unsigned_decimal: %u\n\
+// 	hexadecimal: %x\n\
+// 	hexadecimal_forte : %X\n\
+// 	percentage: %%\n\n",\
+// 	 character,\
+// 	 string,\
+// 	 ptr_character,\
+// 	 decimal,\
+// 	 integer,\
+// 	 unsigned_decimal,\
+// 	 hexadecimal,\
+// 	 hexadecimal_forte\
+// 	);
 
-	printf("\
-	------------------------------------------------------------------------------------\n\
-	The real printf:\n\n\
-	character: %c\n\
-	string: %s\n\
-	ptr_character : %p\n\
-	decimal: %d\n\
-	integer : %i\n\
-	unsigned_decimal: %u\n\
-	hexadecimal: %x\n\
-	percentage: %%\n\n",\
-	 character,\
-	 string,\
-	 ptr_character,\
-	 decimal,\
-	 integer,\
-	 unsigned_decimal,\
-	 hexadecimal\
-	);
-	return (0);
-}
+// 	printf("\
+// 	----------------------------------------------------------\n\
+// 	The real printf:\n\n\
+// 	character: %c\n\
+// 	string: %s\n\
+// 	ptr_character : %p\n\
+// 	decimal: %d\n\
+// 	integer : %i\n\
+// 	unsigned_decimal: %u\n\
+// 	hexadecimal: %x\n\
+// 	percentage: %%\n\n",\
+// 	 character,\
+// 	 string,\
+// 	 ptr_character,\
+// 	 decimal,\
+// 	 integer,\
+// 	 unsigned_decimal,\
+// 	 hexadecimal\
+// 	);
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	int	fd;
+
+// 	fd = open("text.txt", O_RDONLY);
+// 	printf("%s", get_next_line(fd));
+// 	printf("%s", get_next_line(fd));
+// 	printf("%s", get_next_line(fd));
+// 	printf("%s", get_next_line(fd));
+// 	printf("%s", get_next_line(fd));
+// 	return (0);
+// }

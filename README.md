@@ -6,6 +6,7 @@
 * [Function Overview](#function-overview)
 * [Bonus](#bonus)
 * [Ft_printf](#ft_printf)
+* [get_next_line](#get_next_line)
 
 ## Introduction
 In this project we'll be implementing our home-made functions from libc, which will be very useful to get familiar with memory allocation, and to think of creative ways to code these functions.
@@ -80,5 +81,12 @@ This project is pretty straight forward. You will recode printf. You will mainly
 | Bonus Function | Description |
 | :------------: | :---------: |
 | ``ft_printf`` | Reproduce the behavior of the real ``printf`` function |
+
+## get_next_line
+The aim of this project is to make you code a function that returns a line, read from a file descriptor.
+
+| Bonus Function | Description |
+| :------------: | :---------: |
+| ``get_next_line`` | returns a line read from a file descriptor.|
 
 **Author:** *[René Marceau](https://github.com/ReneMarceau)*
